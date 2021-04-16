@@ -4,7 +4,7 @@ obj_sky/unicast.o: /home/ripple/contiki/core/net/rime/unicast.c \
  /home/ripple/contiki/core/./net/linkaddr.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/rime/collect.h \
  /home/ripple/contiki/core/./net/rime/runicast.h \
  /home/ripple/contiki/core/./net/rime/stunicast.h \
@@ -72,7 +72,7 @@ obj_sky/unicast.o: /home/ripple/contiki/core/net/rime/unicast.c \
  /home/ripple/contiki/core/./net/linkaddr.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/rime/collect.h :
  /home/ripple/contiki/core/./net/rime/runicast.h :
  /home/ripple/contiki/core/./net/rime/stunicast.h :

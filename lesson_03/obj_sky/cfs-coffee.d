@@ -1,7 +1,7 @@
 obj_sky/cfs-coffee.o: /home/ripple/contiki/core/cfs/cfs-coffee.c \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./cfs/cfs.h \
  /home/ripple/contiki/core/./contiki.h \
  /home/ripple/contiki/core/./contiki-version.h \
@@ -35,7 +35,7 @@ obj_sky/cfs-coffee.o: /home/ripple/contiki/core/cfs/cfs-coffee.c \
 /home/ripple/contiki/core/cfs/cfs-coffee.c :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./cfs/cfs.h :
  /home/ripple/contiki/core/./contiki.h :
  /home/ripple/contiki/core/./contiki-version.h :

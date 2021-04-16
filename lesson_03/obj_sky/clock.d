@@ -3,7 +3,7 @@ obj_sky/clock.o: /home/ripple/contiki/cpu/msp430/f1xxx/clock.c \
  /home/ripple/contiki/core/./contiki-version.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./contiki-default-conf.h \
  /home/ripple/contiki/core/./sys/process.h \
  /home/ripple/contiki/core/./sys/pt.h \
@@ -34,7 +34,7 @@ obj_sky/clock.o: /home/ripple/contiki/cpu/msp430/f1xxx/clock.c \
  /home/ripple/contiki/core/./contiki-version.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./contiki-default-conf.h :
  /home/ripple/contiki/core/./sys/process.h :
  /home/ripple/contiki/core/./sys/pt.h :

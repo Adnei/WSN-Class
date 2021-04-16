@@ -3,7 +3,7 @@ obj_sky/uip-ipchksum.o: /home/ripple/contiki/cpu/msp430/./uip-ipchksum.c \
  /home/ripple/contiki/core/./net/ip/uipopt.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/ip/tcpip.h \
  /home/ripple/contiki/core/./contiki.h \
  /home/ripple/contiki/core/./contiki-version.h \
@@ -34,7 +34,7 @@ obj_sky/uip-ipchksum.o: /home/ripple/contiki/cpu/msp430/./uip-ipchksum.c \
  /home/ripple/contiki/core/./net/ip/uipopt.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/ip/tcpip.h :
  /home/ripple/contiki/core/./contiki.h :
  /home/ripple/contiki/core/./contiki-version.h :

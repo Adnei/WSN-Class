@@ -1,7 +1,7 @@
 obj_sky/etimer.o: /home/ripple/contiki/core/sys/etimer.c \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./sys/etimer.h \
  /home/ripple/contiki/core/./sys/timer.h \
  /home/ripple/contiki/core/./sys/clock.h \
@@ -13,7 +13,7 @@ obj_sky/etimer.o: /home/ripple/contiki/core/sys/etimer.c \
 /home/ripple/contiki/core/sys/etimer.c :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./sys/etimer.h :
  /home/ripple/contiki/core/./sys/timer.h :
  /home/ripple/contiki/core/./sys/clock.h :

@@ -1,7 +1,7 @@
 obj_sky/compower.o: /home/ripple/contiki/core/sys/compower.c \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./sys/energest.h \
  /home/ripple/contiki/core/./sys/rtimer.h \
  /home/ripple/contiki/cpu/msp430/./rtimer-arch.h \
@@ -38,7 +38,7 @@ obj_sky/compower.o: /home/ripple/contiki/core/sys/compower.c \
 /home/ripple/contiki/core/sys/compower.c :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./sys/energest.h :
  /home/ripple/contiki/core/./sys/rtimer.h :
  /home/ripple/contiki/cpu/msp430/./rtimer-arch.h :

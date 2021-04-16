@@ -4,7 +4,7 @@ obj_sky/netflood.o: /home/ripple/contiki/core/net/rime/netflood.c \
  /home/ripple/contiki/core/./net/packetbuf.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/linkaddr.h \
  /home/ripple/contiki/core/./net/llsec/llsec802154.h \
  /home/ripple/contiki/core/./net/mac/frame802154.h \
@@ -47,7 +47,7 @@ obj_sky/netflood.o: /home/ripple/contiki/core/net/rime/netflood.c \
  /home/ripple/contiki/core/./net/packetbuf.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/linkaddr.h :
  /home/ripple/contiki/core/./net/llsec/llsec802154.h :
  /home/ripple/contiki/core/./net/mac/frame802154.h :

@@ -2,7 +2,7 @@ obj_sky/rtimer.o: /home/ripple/contiki/core/sys/rtimer.c \
  /home/ripple/contiki/core/./sys/rtimer.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/cpu/msp430/./rtimer-arch.h \
  /home/ripple/contiki/core/./contiki.h \
  /home/ripple/contiki/core/./contiki-version.h \
@@ -30,7 +30,7 @@ obj_sky/rtimer.o: /home/ripple/contiki/core/sys/rtimer.c \
  /home/ripple/contiki/core/./sys/rtimer.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/cpu/msp430/./rtimer-arch.h :
  /home/ripple/contiki/core/./contiki.h :
  /home/ripple/contiki/core/./contiki-version.h :

@@ -2,7 +2,7 @@ obj_sky/frame802154.o: /home/ripple/contiki/core/net/mac/frame802154.c \
  /home/ripple/contiki/core/./sys/cc.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/mac/frame802154.h \
  /home/ripple/contiki/core/./net/llsec/llsec802154.h \
  /home/ripple/contiki/core/./net/ip/uip.h \
@@ -36,7 +36,7 @@ obj_sky/frame802154.o: /home/ripple/contiki/core/net/mac/frame802154.c \
  /home/ripple/contiki/core/./sys/cc.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/mac/frame802154.h :
  /home/ripple/contiki/core/./net/llsec/llsec802154.h :
  /home/ripple/contiki/core/./net/ip/uip.h :

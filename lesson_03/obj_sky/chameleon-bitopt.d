@@ -4,7 +4,7 @@ obj_sky/chameleon-bitopt.o: \
  /home/ripple/contiki/core/./net/rime/channel.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/packetbuf.h \
  /home/ripple/contiki/core/./net/linkaddr.h \
  /home/ripple/contiki/core/./net/llsec/llsec802154.h \
@@ -72,7 +72,7 @@ obj_sky/chameleon-bitopt.o: \
  /home/ripple/contiki/core/./net/rime/channel.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/packetbuf.h :
  /home/ripple/contiki/core/./net/linkaddr.h :
  /home/ripple/contiki/core/./net/llsec/llsec802154.h :

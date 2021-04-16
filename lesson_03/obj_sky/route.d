@@ -4,7 +4,7 @@ obj_sky/route.o: /home/ripple/contiki/core/net/rime/route.c \
  /home/ripple/contiki/core/./sys/cc.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./sys/ctimer.h \
  /home/ripple/contiki/core/./sys/etimer.h \
  /home/ripple/contiki/core/./sys/timer.h \
@@ -21,7 +21,7 @@ obj_sky/route.o: /home/ripple/contiki/core/net/rime/route.c \
  /home/ripple/contiki/core/./sys/cc.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./sys/ctimer.h :
  /home/ripple/contiki/core/./sys/etimer.h :
  /home/ripple/contiki/core/./sys/timer.h :

@@ -2,7 +2,7 @@ obj_sky/rime.o: /home/ripple/contiki/core/net/rime/rime.c \
  /home/ripple/contiki/core/./net/netstack.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/llsec/llsec.h \
  /home/ripple/contiki/core/./net/mac/mac.h \
  /home/ripple/contiki/core/./dev/radio.h \
@@ -75,7 +75,7 @@ obj_sky/rime.o: /home/ripple/contiki/core/net/rime/rime.c \
  /home/ripple/contiki/core/./net/netstack.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/llsec/llsec.h :
  /home/ripple/contiki/core/./net/mac/mac.h :
  /home/ripple/contiki/core/./dev/radio.h :

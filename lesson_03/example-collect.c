@@ -48,7 +48,15 @@
 
 #include <stdio.h>
 
+// #define LOWER_BOUND 28
+// #define UPPER_BOUND 30
+
 static struct collect_conn tc;
+// Tricky way to manually count seqno
+// Used for debug purpose
+int count = 0;
+// Each mote has their own period for sending packets. It may vary from 25 to 30 seconds.
+// int periodic_seconds = 0;
 
 /*---------------------------------------------------------------------------*/
 PROCESS(example_collect_process, "Test collect process");
@@ -70,6 +78,8 @@ PROCESS_THREAD(example_collect_process, ev, data)
 {
   static struct etimer periodic;
   static struct etimer et;
+  // periodic_seconds = random_rand() % (UPPER_BOUND - LOWER_BOUND +1) + LOWER_BOUND;
+  // printf("I send packets every %d seconds!!\n", periodic_seconds);
 
   PROCESS_BEGIN();
 
@@ -100,11 +110,12 @@ PROCESS_THREAD(example_collect_process, ev, data)
       static linkaddr_t oldparent;
       const linkaddr_t *parent;
 
-      printf("Sending\n");
+      printf("Sending -- seqno %d\n", count);
       packetbuf_clear();
       packetbuf_set_datalen(sprintf(packetbuf_dataptr(),
 				  "%s", "HEY THERE!!!") + 1);
       collect_send(&tc, 15);
+      count = count + 1;
 
       parent = collect_parent(&tc);
       if(!linkaddr_cmp(parent, &oldparent)) {

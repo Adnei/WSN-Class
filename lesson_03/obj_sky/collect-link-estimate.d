@@ -5,7 +5,7 @@ obj_sky/collect-link-estimate.o: \
  /home/ripple/contiki/core/./net/linkaddr.h \
  /home/ripple/contiki/platform/sky/./contiki-conf.h \
  /home/ripple/contiki/platform/sky/./platform-conf.h \
- /home/ripple/contiki/cpu/msp430/./msp430def.h \
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h \
  /home/ripple/contiki/core/./net/rime/runicast.h \
  /home/ripple/contiki/core/./net/rime/stunicast.h \
  /home/ripple/contiki/core/./sys/ctimer.h \
@@ -57,7 +57,7 @@ obj_sky/collect-link-estimate.o: \
  /home/ripple/contiki/core/./net/linkaddr.h :
  /home/ripple/contiki/platform/sky/./contiki-conf.h :
  /home/ripple/contiki/platform/sky/./platform-conf.h :
- /home/ripple/contiki/cpu/msp430/./msp430def.h :
+ /home/ripple/contiki/cpu/msp430/./msp430def.h project-conf.h :
  /home/ripple/contiki/core/./net/rime/runicast.h :
  /home/ripple/contiki/core/./net/rime/stunicast.h :
  /home/ripple/contiki/core/./sys/ctimer.h :
