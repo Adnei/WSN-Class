@@ -1969,9 +1969,9 @@ LOAD /usr/lib/gcc/msp430/4.6.3/mmpy-16/libcrt0.a
  .stab          0x000000000001d898      0x318 contiki-sky.a(framer.o)
                                         0xc54 (size before relaxing)
 
-.stabstr        0x0000000000000000    0x177d9
+.stabstr        0x0000000000000000    0x17801
  *(.stabstr)
- .stabstr       0x0000000000000000    0x177d9 example-collect.co
+ .stabstr       0x0000000000000000    0x17801 example-collect.co
 
 .stab.excl
  *(.stab.excl)

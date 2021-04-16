@@ -1,4 +1,4 @@
-CONTIKI = /home/ripple/contiki
+CONTIKI = $(HOME)/contiki
 
 all: example-collect
 
