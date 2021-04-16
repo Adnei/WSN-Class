@@ -1,1 +1,1 @@
-Some activities from Wireless Sensors class
+Some work from Wireless Sensors class
