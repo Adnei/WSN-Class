@@ -8,6 +8,7 @@
   <project EXPORT="discard">[APPS_DIR]/powertracker</project>
   <simulation>
     <title>collect_network</title>
+    <speedlimit>2.0</speedlimit>
     <randomseed>123456</randomseed>
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>
@@ -155,10 +156,10 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>4</z>
+    <z>0</z>
     <height>160</height>
-    <location_x>400</location_x>
-    <location_y>0</location_y>
+    <location_x>868</location_x>
+    <location_y>544</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.Visualizer
@@ -168,11 +169,11 @@
       <skin>org.contikios.cooja.plugins.skins.GridVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.TrafficVisualizerSkin</skin>
       <skin>org.contikios.cooja.plugins.skins.UDGMVisualizerSkin</skin>
-      <viewport>1.3681005482767914 0.0 0.0 1.3681005482767914 150.49371033725663 118.19954294106957</viewport>
+      <viewport>1.3681005482767914 0.0 0.0 1.3681005482767914 103.49371033725666 -3.800457058930451</viewport>
     </plugin_config>
     <width>400</width>
-    <z>0</z>
-    <height>400</height>
+    <z>1</z>
+    <height>216</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
   </plugin>
@@ -184,10 +185,10 @@
       <coloring />
     </plugin_config>
     <width>760</width>
-    <z>3</z>
-    <height>240</height>
+    <z>2</z>
+    <height>539</height>
     <location_x>400</location_x>
-    <location_y>160</location_y>
+    <location_y>1</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.TimeLine
@@ -204,22 +205,24 @@
       <zoomfactor>500.0</zoomfactor>
     </plugin_config>
     <width>1160</width>
-    <z>2</z>
+    <z>4</z>
     <height>166</height>
     <location_x>0</location_x>
     <location_y>542</location_y>
   </plugin>
   <plugin>
-    org.contikios.cooja.plugins.Notes
+    org.contikios.cooja.plugins.RadioLogger
     <plugin_config>
-      <notes>Enter notes here</notes>
-      <decorations>true</decorations>
+      <split>150</split>
+      <formatted_time />
+      <showdups>false</showdups>
+      <hidenodests>false</hidenodests>
     </plugin_config>
-    <width>480</width>
-    <z>1</z>
-    <height>160</height>
-    <location_x>680</location_x>
-    <location_y>0</location_y>
+    <width>398</width>
+    <z>3</z>
+    <height>320</height>
+    <location_x>0</location_x>
+    <location_y>220</location_y>
   </plugin>
 </simconf>
 
