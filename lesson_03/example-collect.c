@@ -43,7 +43,7 @@
 #include "net/rime/collect.h"
 #include "dev/leds.h"
 #include "dev/button-sensor.h"
-
+#include "powertrace.h"
 #include "net/netstack.h"
 
 #include <stdio.h>
@@ -82,6 +82,8 @@ PROCESS_THREAD(example_collect_process, ev, data)
   // printf("I send packets every %d seconds!!\n", periodic_seconds);
 
   PROCESS_BEGIN();
+  // printf("Power Trace: Every 5 secs\n");
+  powertrace_start(CLOCK_SECOND*5);
 
   collect_open(&tc, 130, COLLECT_ROUTER, &callbacks);
 

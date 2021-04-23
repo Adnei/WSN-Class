@@ -1,4 +1,5 @@
 CONTIKI = $(HOME)/contiki
+APPS+=powertrace
 CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
 
 all: example-collect
