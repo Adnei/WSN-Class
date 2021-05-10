@@ -250,7 +250,7 @@
   <plugin>
     org.contikios.cooja.plugins.SimControl
     <width>280</width>
-    <z>0</z>
+    <z>1</z>
     <height>160</height>
     <location_x>-2</location_x>
     <location_y>383</location_y>
@@ -287,7 +287,7 @@
   <plugin>
     org.contikios.cooja.plugins.ScriptRunner
     <plugin_config>
-      <script>TIMEOUT(1200000); //10min&#xD;
+      <script>TIMEOUT(1200000); //20min&#xD;
 // TIMEOUT(120000);  // 2min&#xD;
 log.log("Time|ID|Message|LISTEN|TRANSMIT\n")&#xD;
 while (true) {&#xD;
@@ -309,7 +309,7 @@ while (true) {&#xD;
       <active>true</active>
     </plugin_config>
     <width>866</width>
-    <z>1</z>
+    <z>0</z>
     <height>585</height>
     <location_x>261</location_x>
     <location_y>45</location_y>

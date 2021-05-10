@@ -1,5 +1,5 @@
-// TIMEOUT(1200000); //20min
-TIMEOUT(120000);  // 2min
+TIMEOUT(1200000); //20min
+// TIMEOUT(120000);  // 2min
 log.log("Time|ID|Message|LISTEN|TRANSMIT\n")
 while (true) {
     msgArray = msg.split('|')

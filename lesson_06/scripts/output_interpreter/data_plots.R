@@ -39,7 +39,7 @@ delay_exec.plot <- ggplot(delay_avg_exec.df, aes(x=EXEC,y=DELAY/time_unit)) +
   scale_x_continuous(breaks=seq(1,max(plot_info.df$x_axis),1) )
 ggsave(filename='delay_exec.pdf', plot=delay_exec.plot)
 ################################################################################
-#                         Power mW By Mote                                     #
+#                         Power mW By Time                                     #
 ################################################################################
 source("parse_data_power.R")
 
@@ -61,3 +61,21 @@ power_avg_sec.plot <- ggplot(energest_avg_by_sec, aes(x = Time)) +
   theme_minimal() #+
   # scale_x_continuous(breaks=seq(1,max(plot_info.df$x_axis),1) )
 ggsave(filename='power_avg_sec.pdf', plot=power_avg_sec.plot)
+################################################################################
+#                         Power mW By Mote                                     #
+################################################################################
+energest_avg_by_mote <- aggregate(list(
+    LISTEN=listen_transmit.df$LISTEN,
+    TRANSMIT=listen_transmit.df$TRANSMIT),
+  by=list(Mote=listen_transmit.df$ID),
+  FUN=mean)
+
+power_avg_sec.plot <- ggplot(energest_avg_by_mote, aes(x = Mote)) +
+  geom_line(aes(y=LISTEN* 0.33 * 3 / 32768 / 5, colour="RX")) +
+  geom_line(aes(y=TRANSMIT* 0.33 * 3 / 32768 / 5, colour="TX")) +
+  ylab("Energia (mW)") +
+  xlab("Mote ID") +
+  ggtitle("Consumo de energia") +
+  theme_minimal() +
+  scale_x_continuous(breaks=seq(1,max(energest_avg_by_mote$Mote),1) )
+ggsave(filename='power_avg_mote.pdf', plot=power_avg_sec.plot)
