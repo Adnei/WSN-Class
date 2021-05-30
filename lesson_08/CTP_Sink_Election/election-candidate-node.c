@@ -53,7 +53,7 @@
 
 // Tricky way to manually count seqno
 // Used for debug purpose
-int count = 0;
+int count = 1;
 
 static struct collect_conn tc;
 int annuncement_control = 0;
@@ -68,12 +68,12 @@ AUTOSTART_PROCESSES(&election_announcement_process);
 static void
 sink_recv(const linkaddr_t *originator, uint8_t seqno, uint8_t hops)
 {
-  printf("Sink received message from node %d.%d, seqno %d, hops %d: len %d '%s'\n",
-	 originator->u8[0], originator->u8[1],
-	 seqno, hops,
-	 packetbuf_datalen(),
-	 (char *)packetbuf_dataptr());
-   printf("DATA recv '%s' from %d\n", (char *)packetbuf_dataptr(), originator->u8[0]);
+  // printf("Sink received message from node %d.%d, seqno %d, hops %d: len %d '%s'\n",
+	//  originator->u8[0], originator->u8[1],
+	//  seqno, hops,
+	//  packetbuf_datalen(),
+	//  (char *)packetbuf_dataptr());
+   printf("DATA recv from %d %s\n", originator->u8[0], (char *)packetbuf_dataptr());
 }
 /*---------------------------------------------------------------------------*/
 static const struct collect_callbacks callbacks = { sink_recv };
@@ -97,8 +97,8 @@ received_announcement(struct announcement *a, const linkaddr_t *from,
 		annuncement_control = aux;
 		announcement_set_value(a, aux);
 	}
-  printf("Got announcement from %d.%d, id %d, value %d, our new value is %d\n",
-	 from->u8[0], from->u8[1], id, value, annuncement_control);
+  printf("ANNOUNCEMENT recv from %d, id %d, value %d, our new value is %d\n",
+	 from->u8[0], id, value, annuncement_control);
 
 #if CONTIKI_TARGET_NETSIM
   {
@@ -149,10 +149,9 @@ PROCESS_THREAD(election_announcement_process, ev, data)
 			const linkaddr_t *parent;
 			char buf[MAX_PAYLOAD_LEN];
 
-			// printf("Sending -- seqno %d\n", count);
-			printf("DATA send to %d 'Hello %d'\n",
+			printf("DATA sent to %d seqn %d\n",
 						sink_id, count);
-			sprintf(buf, "Hello %d from the source", count);
+			sprintf(buf, "seqn %d", count);
 			packetbuf_clear();
 			packetbuf_set_datalen(sprintf(packetbuf_dataptr(),
 					"%s", buf) + 1);
@@ -162,10 +161,10 @@ PROCESS_THREAD(election_announcement_process, ev, data)
 			parent = collect_parent(&tc);
 			if(!linkaddr_cmp(parent, &oldparent)) {
 				if(!linkaddr_cmp(&oldparent, &linkaddr_null)) {
-					printf("#L %d 0\n", oldparent.u8[0]);
+					// printf("#L %d 0\n", oldparent.u8[0]);
 				}
 				if(!linkaddr_cmp(parent, &linkaddr_null)) {
-					printf("#L %d 1\n", parent->u8[0]);
+					// printf("#L %d 1\n", parent->u8[0]);
 				}
 				linkaddr_copy(&oldparent, parent);
 			}

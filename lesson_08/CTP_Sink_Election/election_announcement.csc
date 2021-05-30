@@ -189,7 +189,7 @@
       <viewport>2.2405178957847456 0.0 0.0 2.2405178957847456 81.95485739592918 49.1129940996516</viewport>
     </plugin_config>
     <width>400</width>
-    <z>1</z>
+    <z>2</z>
     <height>400</height>
     <location_x>1</location_x>
     <location_y>1</location_y>
@@ -201,11 +201,11 @@
       <formatted_time />
       <coloring />
     </plugin_config>
-    <width>1000</width>
-    <z>2</z>
-    <height>715</height>
-    <location_x>400</location_x>
-    <location_y>2</location_y>
+    <width>744</width>
+    <z>1</z>
+    <height>652</height>
+    <location_x>401</location_x>
+    <location_y>-2</location_y>
   </plugin>
   <plugin>
     org.contikios.cooja.plugins.ScriptRunner
@@ -217,16 +217,28 @@ while (true) {&#xD;
     if(msg.contains("REMOVE SINK NOW")){&#xD;
         mote.getSimulation().removeMote(mote)&#xD;
     }&#xD;
+    // powertrace.c is modified in order to print only listen and trasmit&#xD;
+    // the printf separes listen and transmit by |&#xD;
+    msgArray = msg.split('|')&#xD;
+    if(msgArray.length &gt; 1){&#xD;
+      if((msgArray[0]).split(':').length &gt; 1 &amp;&amp; (msgArray[1]).split(':').length &gt; 1){&#xD;
+        listen = (msgArray[0]).split(':')[1]&#xD;
+        transmit = (msgArray[1]).split(':')[1]&#xD;
+        log.log(time + "|" + id + "| |"+listen+"|"+transmit+"\n")&#xD;
+      }&#xD;
+    }else{&#xD;
+      log.log(time + "|" + id + "|" + msg+"|NA|NA\n")&#xD;
+    }&#xD;
+&#xD;
     YIELD(); /* wait for another mote output */&#xD;
 }</script>
       <active>true</active>
     </plugin_config>
-    <width>600</width>
-    <z>-1</z>
-    <height>700</height>
-    <location_x>31</location_x>
-    <location_y>31</location_y>
-    <minimized>true</minimized>
+    <width>831</width>
+    <z>0</z>
+    <height>547</height>
+    <location_x>300</location_x>
+    <location_y>22</location_y>
   </plugin>
 </simconf>
 
