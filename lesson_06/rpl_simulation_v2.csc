@@ -298,7 +298,7 @@ while (true) {&#xD;
       if((msgArray[0]).split(':').length &gt; 1 &amp;&amp; (msgArray[1]).split(':').length &gt; 1){&#xD;
         listen = (msgArray[0]).split(':')[1]&#xD;
         transmit = (msgArray[1]).split(':')[1]&#xD;
-        log.log(time + "|" + id + "| |"+listen+"|"+transmit+"\n")&#xD;
+        log.log(time + "|" + id + "|NA|"+listen+"|"+transmit+"\n")&#xD;
       }&#xD;
     }else{&#xD;
       log.log(time + "|" + id + "|" + msg+"|NA|NA\n")&#xD;

@@ -7,7 +7,7 @@ while (true) {
       if((msgArray[0]).split(':').length > 1 && (msgArray[1]).split(':').length > 1){
         listen = (msgArray[0]).split(':')[1]
         transmit = (msgArray[1]).split(':')[1]
-        log.log(time + "|" + id + "| |"+listen+"|"+transmit+"\n")
+        log.log(time + "|" + id + "|NA|"+listen+"|"+transmit+"\n")
       }
     }else{
       log.log(time + "|" + id + "|" + msg+"|NA|NA\n")
