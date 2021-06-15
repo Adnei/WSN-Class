@@ -1,0 +1,8 @@
+*test
+*.log
+*.o
+*.map
+*.sky
+*.exe
+*.a
+*obj_sky*
